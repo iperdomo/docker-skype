@@ -96,7 +96,7 @@ prepare_docker_volume_parameters
 prepare_docker_device_parameters
 
 echo "Starting ${prog}..."
-${SUDO} docker run -d \
+${SUDO} docker run --rm -d \
   ${ENV_VARS} \
   ${VIDEO_DEVICES} \
   ${VOLUMES} \
